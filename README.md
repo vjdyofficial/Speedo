@@ -9,6 +9,10 @@ A Material Design inspired speedometer app for Android!
 - When it comes to customization, 12 different backgrounds, 9 meter dial themes, 6 meter labels, 9 meter neddles, and 8 distance meter fonts. 
 - For orientations, 5 mode option will be applied.
 - It supports landscape mode.
+- You can also get the location icon by clicking the **Settings > Get Location.**
+- Has Reset Location system feature by **long-pressing the power button on the app and click it.**
+- Profile and stats included. No need to sign in to the internet. Just set it up and you're all set!
+- On the Go and Ready to use.
 
 ## Monitoring
 You will only monitor the **Latitude and Longitude, Altitude, and Distance** coordinates. But you can also monitor the **Accuracy, Time and Bearing**.
