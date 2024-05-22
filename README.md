@@ -3,10 +3,10 @@ A Material Design inspired speedometer app for Android!
 
 ## Accuracy and Location
 - The accuration is depending on your device. So, there is no going to send some bad feedbacks.
-- Speed is multiplied by accuracy. so maybe it will become accurate for some reason.
+- Speed is multiplied by value. so maybe it will become accurate for some reason.
 
 ## Features
-- When it comes to customization, 12 different backgrounds, 9 meter dial themes, 6 meter labels, 9 meter neddles, and 8 distance meter fonts. 
+- When it comes to customization, 12 different backgrounds, 4 meter dial themes, 7 meter labels in **2 digits and 3 digits**, 4 meter pointers, and 8 distance meter fonts. 
 - For orientations, 5 mode option will be applied.
 - It supports landscape mode.
 - You can also get the location icon by clicking the **Settings > Get Location.**
@@ -20,13 +20,12 @@ You will only monitor the **Latitude and Longitude, Altitude, and Distance** coo
 ## Distance Meter Calculation
 In order to show the meter to be accurated, I make some math calculation while assembling the code blocks.
 
-`speed * accuracy * 2`
+`speed * multiplyByValue`
 
 But it seems to have some problems, the issue #1 shows some consistencies whie testing. so this time before 6.48, I did this:
 
 `speed.format as decimal - places = 0 ` *
-`accuracy.format as decimal - places = 0` *
-`2`
+`3.865`
 
 ## Tips to use
 - The speedometer on the app will be inaccurate in compared with the *actual car speedometer* in certain Android Devices. 
