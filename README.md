@@ -1,3 +1,10 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/12a6a5bc-3c3f-4418-a6ea-8f64e84b47ab">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/a8036767-c839-4766-87cf-bda21767ed5e">
+  <img alt="Speedo Logo" src="https://github.com/user-attachments/assets/12a6a5bc-3c3f-4418-a6ea-8f64e84b47ab">
+</picture>
+
+
 # Welcome to Speedo App!
 A Material Design inspired speedometer app for Android!
 
