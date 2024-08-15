@@ -13,7 +13,7 @@ A Material Design inspired speedometer app for Android!
 - Speed is multiplied by value. so maybe it will become accurate for some reason.
 
 ## Features
-- When it comes to customization, 12 different backgrounds, 4 meter dial themes, 7 meter labels in **2 digits and 3 digits**, 4 meter pointers, and 8 distance meter fonts. 
+- When it comes to customization, 17 different backgrounds, 4 meter gauge themes, and 8 distance meter fonts. 
 - For orientations, 5 mode option will be applied.
 - It supports landscape mode.
 - You can also get the location icon by clicking the **Settings > Get Location.**
