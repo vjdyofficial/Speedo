@@ -1,0 +1,110 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="v@,AnQl`%p1h]946lP72" x="-490" y="-270">
+    <mutation component_type="Form" is_generic="false" instance_name="CreditsActivity" event_name="ScreenOrientationChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">CreditsActivity</field>
+    <statement name="DO">
+      <block type="component_set_get" id="0og$.XX9W9Pn~P9a;+o;">
+        <mutation component_type="Form" set_or_get="set" property_name="ShowTitlebarBackButton" is_generic="false" instance_name="CreditsActivity"></mutation>
+        <field name="COMPONENT_SELECTOR">CreditsActivity</field>
+        <field name="PROP">ShowTitlebarBackButton</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="jd[^9#`h[u.n*G/^inC@">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="7ECe|Axv0by_U[p*F,NV" x="130" y="-270">
+    <mutation component_type="Form" is_generic="false" instance_name="CreditsActivity" event_name="TitlebarBackButtonClicked"></mutation>
+    <field name="COMPONENT_SELECTOR">CreditsActivity</field>
+    <statement name="DO">
+      <block type="controls_closeScreen" id=".=A{ueVPTfmI$bp?E;Ij"></block>
+    </statement>
+  </block>
+  <block type="component_event" id="?g6UuK*{~aZf0kx7|0cp" x="-490" y="-170">
+    <mutation component_type="Form" is_generic="false" instance_name="CreditsActivity" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">CreditsActivity</field>
+    <statement name="DO">
+      <block type="component_set_get" id="}dL)KLn~BPcI|A^)=Q}[">
+        <mutation component_type="Form" set_or_get="set" property_name="ShowTitlebarBackButton" is_generic="false" instance_name="CreditsActivity"></mutation>
+        <field name="COMPONENT_SELECTOR">CreditsActivity</field>
+        <field name="PROP">ShowTitlebarBackButton</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="]lry63Ts;DfC-GJCfNv~">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="d?tj*tCXxSUjcXO6]q|Z">
+            <mutation component_type="MakeroidViewPager" method_name="AddComponentToView" is_generic="false" instance_name="View_Pager1"></mutation>
+            <field name="COMPONENT_SELECTOR">View_Pager1</field>
+            <value name="ARG0">
+              <block type="component_component_block" id="f7j@f1A:7M#hmQ#(pB!c">
+                <mutation component_type="VerticalScrollArrangement" instance_name="apache1"></mutation>
+                <field name="COMPONENT_SELECTOR">apache1</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id=";j_BJ@=bGx4odJX)?rfQ">
+                <field name="TEXT">Apache License</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="Sidf?AyYmX4o,g=SG/Gc">
+                <mutation component_type="MakeroidViewPager" method_name="AddComponentToView" is_generic="false" instance_name="View_Pager1"></mutation>
+                <field name="COMPONENT_SELECTOR">View_Pager1</field>
+                <value name="ARG0">
+                  <block type="component_component_block" id="U=*OdU^fV`n]F1l^Tl.8">
+                    <mutation component_type="VerticalScrollArrangement" instance_name="silopen"></mutation>
+                    <field name="COMPONENT_SELECTOR">silopen</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="t,45tl`l-XVM4h/3p)F`">
+                    <field name="TEXT">SIL Open Font License</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="t2:*(e4]X+x+ZH,)$Q4j">
+                    <mutation component_type="MakeroidViewPager" method_name="AddComponentToView" is_generic="false" instance_name="View_Pager1"></mutation>
+                    <field name="COMPONENT_SELECTOR">View_Pager1</field>
+                    <value name="ARG0">
+                      <block type="component_component_block" id="EA+*ME@;aJaLLGnbTp%}">
+                        <mutation component_type="VerticalScrollArrangement" instance_name="privacypolicy1"></mutation>
+                        <field name="COMPONENT_SELECTOR">privacypolicy1</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="text" id="A9(.:J{nR*[*wInoodN]">
+                        <field name="TEXT">Privacy Policy</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="S?i$ph^XiGQ[kf%||l~s">
+                        <mutation component_type="MakeroidViewPager" method_name="AddComponentToView" is_generic="false" instance_name="View_Pager1"></mutation>
+                        <field name="COMPONENT_SELECTOR">View_Pager1</field>
+                        <value name="ARG0">
+                          <block type="component_component_block" id="%mlxFpk0o4itaLdpyq7~">
+                            <mutation component_type="VerticalScrollArrangement" instance_name="sources1"></mutation>
+                            <field name="COMPONENT_SELECTOR">sources1</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="M(K4Enn:B#ZhaIA:(|ZQ">
+                            <field name="TEXT">Sources</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="242" language-version="34"></yacodeblocks>
+</xml>

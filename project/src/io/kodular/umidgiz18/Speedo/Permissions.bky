@@ -1,0 +1,77 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="u;%x-%KazyaBGQ|KBsc=" x="90" y="-190">
+    <field name="NAME">granted</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="Wl7t|muj~Cl:oc?LE`?_">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="|Rb`^(BTJ=hWC0w9R^Ix" x="-430" y="-150">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="md_button" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">md_button</field>
+    <statement name="DO">
+      <block type="component_method" id="z(q2C*Ev4]fJJI,v,~OP">
+        <mutation component_type="Form" method_name="AskForPermission" is_generic="false" instance_name="Permissions"></mutation>
+        <field name="COMPONENT_SELECTOR">Permissions</field>
+        <value name="ARG0">
+          <block type="text" id="WH3).,ZGWk1SP[=X!0v;">
+            <field name="TEXT">ACCESS_LOCATION_EXTRA_COMMANDS</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="u;tWHiAe]QJ(G5`hxiQ5">
+            <mutation component_type="Form" method_name="AskForPermission" is_generic="false" instance_name="Permissions"></mutation>
+            <field name="COMPONENT_SELECTOR">Permissions</field>
+            <value name="ARG0">
+              <block type="text" id=".;2k9~[~/1bx%N=5g!.T">
+                <field name="TEXT">ACCESS_COARSE_LOCATION</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="8eN]]`J~.sc#P~#|Hk/P">
+                <mutation component_type="Form" method_name="AskForPermission" is_generic="false" instance_name="Permissions"></mutation>
+                <field name="COMPONENT_SELECTOR">Permissions</field>
+                <value name="ARG0">
+                  <block type="text" id="**KS(Z4h8Er8T%{!Hd*f">
+                    <field name="TEXT">ACCESS_FINE_LOCATION</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="^gcStZiXcV#_]n2vde]Q" x="330" y="-130">
+    <mutation component_type="Form" is_generic="false" instance_name="Permissions" event_name="PermissionGranted"></mutation>
+    <field name="COMPONENT_SELECTOR">Permissions</field>
+    <statement name="DO">
+      <block type="controls_if" id="cw]oePDJp_tq5_?YX{#5">
+        <value name="IF0">
+          <block type="logic_compare" id="^`uH:TyOkBi}pVvPVp#H">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="sneFrOG%b=v*k0~ywgl;">
+                <mutation>
+                  <eventparam name="permissionName"></eventparam>
+                </mutation>
+                <field name="VAR">permissionName</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="J(]g2xa8qr@6D21hT5lk">
+                <field name="TEXT">FineLocation</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_closeScreen" id="/=D9{+E:Dk[D/mINJg;p"></block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="242" language-version="34"></yacodeblocks>
+</xml>

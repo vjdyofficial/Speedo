@@ -1,0 +1,289 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2023-04-07T20:47:31+0200",
+ "nonVisible": "true",
+ "iconName": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAPCAYAAADQ4S5JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHiSURBVChTXZLvatNQGMafnGZx7Zp2zCo2c6NZVrqswoYTwU/idYh+8bsX4yUI3oZTHAiiA/cH3WZiaaldY1qbNmm6Nu3xnJNudf7g5XDged5/50jhRZdiSvPcwe7bD1BVVdyDIMDOg20Y67q4c64M7dYfHB58g2maSMgSJhOKaDSGbdso6HehLechSVJsaLltHB+dYLNswgvrKB8Ska3yMA1ESfw4s6CvrSCv3QEZDod4t7uHjY0SHO8U+SfP0H75FPj6HIVPPkbkHGuGjv0vB/C8Lggvk81mQaUI90/i3pdeJMTJTcXPCcwpVMxFCIkNiqLgYtSPM//He+Mjm5QKDdcSSqnYhkxuYOnVm6lsxmPrEUAJwjBki5jEBt/30feH2C8OZqat1yKsnTl0vQF6vR64VgrCDj0++o7fTgvrRQP+wIHbtZBOLSKXKbBuUvhpV6BmFmBuluK1RlEE26qwTAE0TROZLsNxHCSTCnSjwM55iIXLsoxbt3Oo1+vodDqiVx58tmazicxiRog58QsxVDUNs1xCo9HAeDwWBtd1sbK6jFzu5lT1z9fg8NZqtV9wnbaomlqYZy+8KlZ6yVUFDhfJcoKZaqhWq2BTXBNzrlXg8FbOTi30+yG2tu+J150B/AUFg+mCSHEmiwAAAABJRU5ErkJggg==",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "GeomagneticField",
+   "description": "Return: Declination, FieldStrengh, HorizontalStrength, Inclination, X, Y, Z, currentTimeMillis",
+   "params": [
+    {
+     "name": "latitude",
+     "type": "text"
+    },
+    {
+     "name": "longitude",
+     "type": "text"
+    },
+    {
+     "name": "altitude",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "ProximityAlert",
+   "description": "Set a proximity alert for the location given by the position (latitude, longitude) and the radius.",
+   "params": [
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    },
+    {
+     "name": "radius",
+     "type": "number"
+    },
+    {
+     "name": "expiration",
+     "type": "number"
+    }
+   ],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "StartLocation",
+   "description": "Speed in m/s. BearingTo and DistanceTo referenced a LatitudeTo and LongitudeTo.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "StatusGps",
+   "description": "If GPS is off, you get a message.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "StopLocation",
+   "description": "Stop location.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "convert",
+   "description": "Convert latitude and longitude from decimal grade to gg mm ss.ss",
+   "params": [
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "getFromLocation",
+   "description": "Returns an array of Addresses that are known to describe the area immediately surrounding the given latitude and longitude.",
+   "params": [
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "getFromLocationName",
+   "description": "Geocoding is the process of transforming a street address or other description of a location into a (latitude, longitude) coordinate.",
+   "params": [{
+    "name": "strAddress",
+    "type": "text"
+   }],
+   "returnType": "text"
+  }
+ ],
+ "blockProperties": [
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "LatitudeTo",
+   "description": "Latitude referenced to bearing and distance.",
+   "type": "text"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "LongitudeTo",
+   "description": "Longitude referenced to bearing and distance.",
+   "type": "text"
+  }
+ ],
+ "helpUrl": "",
+ "licenseName": "",
+ "type": "com.KIO4_LocationSensor.KIO4_LocationSensor",
+ "androidMinSdk": 7,
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "KIO4_LocationSensor",
+ "helpString": "Sensor location. Permission: ACCESS_FINE_LOCATION and ACCESS_COARSE_LOCATION Juan Antonio Villalpando - KIO4.COM",
+ "properties": [
+  {
+   "defaultValue": "37.377103",
+   "name": "LatitudeTo",
+   "editorArgs": [],
+   "editorType": "string"
+  },
+  {
+   "defaultValue": "-5.986896",
+   "name": "LongitudeTo",
+   "editorArgs": [],
+   "editorType": "string"
+  }
+ ],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "GeomagneticFieldHere",
+   "description": "Indicates that a new location has been detected and shows information about geomagnetic field in that position.",
+   "params": [
+    {
+     "name": "declination",
+     "type": "text"
+    },
+    {
+     "name": "fieldStrength",
+     "type": "text"
+    },
+    {
+     "name": "horizontalStrength",
+     "type": "text"
+    },
+    {
+     "name": "inclination",
+     "type": "text"
+    },
+    {
+     "name": "x",
+     "type": "text"
+    },
+    {
+     "name": "y",
+     "type": "text"
+    },
+    {
+     "name": "z",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "GotFromLocation",
+   "description": "Indicates that a new location has been detected and shows information of Addresses that are known to describe the area immediately surrounding the given latitude and longitude.",
+   "params": [
+    {
+     "name": "adminArea",
+     "type": "text"
+    },
+    {
+     "name": "countryCode",
+     "type": "text"
+    },
+    {
+     "name": "countryName",
+     "type": "text"
+    },
+    {
+     "name": "feature",
+     "type": "text"
+    },
+    {
+     "name": "locality",
+     "type": "text"
+    },
+    {
+     "name": "phone",
+     "type": "text"
+    },
+    {
+     "name": "postalCode",
+     "type": "text"
+    },
+    {
+     "name": "premises",
+     "type": "text"
+    },
+    {
+     "name": "subAdmin",
+     "type": "text"
+    },
+    {
+     "name": "subLocality",
+     "type": "text"
+    },
+    {
+     "name": "subThoroughfare",
+     "type": "text"
+    },
+    {
+     "name": "thoroughfare",
+     "type": "text"
+    },
+    {
+     "name": "url",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "LocationChanged",
+   "description": "Indicates that a new location has been detected.",
+   "params": [
+    {
+     "name": "latitude",
+     "type": "number"
+    },
+    {
+     "name": "longitude",
+     "type": "number"
+    },
+    {
+     "name": "altitude",
+     "type": "number"
+    },
+    {
+     "name": "speed",
+     "type": "number"
+    },
+    {
+     "name": "bearing",
+     "type": "number"
+    },
+    {
+     "name": "bearingTo",
+     "type": "number"
+    },
+    {
+     "name": "distanceTo",
+     "type": "number"
+    },
+    {
+     "name": "time",
+     "type": "number"
+    },
+    {
+     "name": "accuracy",
+     "type": "number"
+    }
+   ]
+  }
+ ]
+}]

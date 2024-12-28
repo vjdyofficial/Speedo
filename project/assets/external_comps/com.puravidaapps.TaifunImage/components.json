@@ -1,0 +1,226 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2021-10-25T16:54:37-0600",
+ "nonVisible": "true",
+ "iconName": "https://puravidaapps.com/images/taifun16.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "CreateChunks",
+   "description": "Create chunks of a jpg image file in the ASD - application specific directory. The chunks will be stored in the same directory as the original image file. The following name convention will be used: imageFileName_rowNumber_columnNumber.jpg.",
+   "params": [
+    {
+     "name": "imageFileName",
+     "type": "text"
+    },
+    {
+     "name": "rows",
+     "type": "number"
+    },
+    {
+     "name": "columns",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Crop",
+   "description": "Crop Image in the ASD - application specific directory. Enter the distance in pixel for left, top, right and bottom to crop the original image.",
+   "params": [
+    {
+     "name": "imageFileName",
+     "type": "text"
+    },
+    {
+     "name": "left",
+     "type": "number"
+    },
+    {
+     "name": "top",
+     "type": "number"
+    },
+    {
+     "name": "right",
+     "type": "number"
+    },
+    {
+     "name": "bottom",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Height",
+   "description": "Get height of image in the ASD - application specific directory.",
+   "params": [{
+    "name": "imageFileName",
+    "type": "text"
+   }],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "IsLandscape",
+   "description": "Return true if image in the ASD - application specific directory is in landscape format, else return false.",
+   "params": [{
+    "name": "imageFileName",
+    "type": "text"
+   }],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "Overlay",
+   "description": "Overlay images in the ASD - application specific directory.",
+   "params": [
+    {
+     "name": "imageFileName1",
+     "type": "text"
+    },
+    {
+     "name": "imageFileName2",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "Resize",
+   "description": "Resize a jpg image file in the ASD - application specific storage.",
+   "params": [
+    {
+     "name": "imageFileName",
+     "type": "text"
+    },
+    {
+     "name": "maxWidth",
+     "type": "number"
+    },
+    {
+     "name": "maxHeight",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Rotate",
+   "description": "Rotate Image  in the ASD - application specific directory by 0, 90, 180 or 270 degrees in clockwise direction.",
+   "params": [
+    {
+     "name": "imageFileName",
+     "type": "text"
+    },
+    {
+     "name": "angle",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Scale",
+   "description": "Scale a jpg image file in the ASD - application specific directory. The parameter scalingLogic expects the value CROP or FIT.",
+   "params": [
+    {
+     "name": "imageFileName",
+     "type": "text"
+    },
+    {
+     "name": "width",
+     "type": "number"
+    },
+    {
+     "name": "height",
+     "type": "number"
+    },
+    {
+     "name": "scalingLogic",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Width",
+   "description": "Get width of image in the ASD - application specific directory.",
+   "params": [{
+    "name": "imageFileName",
+    "type": "text"
+   }],
+   "returnType": "number"
+  }
+ ],
+ "blockProperties": [{
+  "rw": "read-write",
+  "deprecated": "false",
+  "name": "SuppressWarnings",
+  "description": "whether Warnings should be suppressed",
+  "type": "boolean"
+ }],
+ "helpUrl": "",
+ "licenseName": "",
+ "type": "com.puravidaapps.TaifunImage",
+ "androidMinSdk": 7,
+ "version": "5",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "TaifunImage",
+ "helpString": "Image Extension for image manipulation. Version 5 as of 2021-10-25.",
+ "properties": [{
+  "defaultValue": "false",
+  "name": "SuppressWarnings",
+  "editorArgs": [],
+  "editorType": "boolean"
+ }],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "ChunksCreated",
+   "description": "Event indicating that chunks have been created.",
+   "params": [
+    {
+     "name": "successful",
+     "type": "boolean"
+    },
+    {
+     "name": "result",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Rotated",
+   "description": "Event indicating that image has been rotated.",
+   "params": [
+    {
+     "name": "successful",
+     "type": "boolean"
+    },
+    {
+     "name": "result",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Scaled",
+   "description": "Event indicating that image has been scaled.",
+   "params": [
+    {
+     "name": "successful",
+     "type": "boolean"
+    },
+    {
+     "name": "result",
+     "type": "text"
+    }
+   ]
+  }
+ ]
+}]

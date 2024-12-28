@@ -1,0 +1,607 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="W5fr_x/fGLzzm%M1q3N}" x="-890" y="-490">
+    <mutation component_type="Form" is_generic="false" instance_name="AboutActivity" event_name="ScreenOrientationChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">AboutActivity</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Lm!%/Fwnd?to9R}EefB6">
+        <mutation component_type="Form" set_or_get="set" property_name="ShowTitlebarBackButton" is_generic="false" instance_name="AboutActivity"></mutation>
+        <field name="COMPONENT_SELECTOR">AboutActivity</field>
+        <field name="PROP">ShowTitlebarBackButton</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="hH-?+5mwJ;O:(CQ]DNHZ">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=";caC-)@}I*H7)$@OsRg`" x="-470" y="-350">
+    <mutation component_type="Form" is_generic="false" instance_name="AboutActivity" event_name="TitlebarBackButtonClicked"></mutation>
+    <field name="COMPONENT_SELECTOR">AboutActivity</field>
+    <statement name="DO">
+      <block type="controls_closeScreen" id="wO5l$(ch6oN8:@tKjB(/"></block>
+    </statement>
+  </block>
+  <block type="component_event" id="a^oOpEi9kU1J,!|@OB6n" x="-450" y="-250">
+    <mutation component_type="Form" is_generic="false" instance_name="AboutActivity" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">AboutActivity</field>
+    <statement name="DO">
+      <block type="controls_closeScreen" id="#YscaLH0Hn`z,=VIOleK"></block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="Q`zTC;?)c%J-){N]}5c8" x="-370" y="-150">
+    <field name="NAME">debug</field>
+    <value name="VALUE">
+      <block type="text" id="^5h{9^^0#B;}k9hGtSkB">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defnoreturn" id="{UX9fMp)fHO$yvgQP#@G" x="-1290" y="-90">
+    <field name="NAME">adjustPaddingText</field>
+    <statement name="STACK">
+      <block type="component_method" id="W#T*ajjFl=mihD,oW(Ar">
+        <mutation component_type="Decoration" method_name="SetMargin" is_generic="false" instance_name="Decoration1"></mutation>
+        <field name="COMPONENT_SELECTOR">Decoration1</field>
+        <value name="ARG0">
+          <block type="component_component_block" id="H)9I9g=No6QM,~VBf@Qv">
+            <mutation component_type="Label" instance_name="categoryLabel"></mutation>
+            <field name="COMPONENT_SELECTOR">categoryLabel</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="EnVHr[Y.lf0=p,Fu39T.">
+            <field name="TEXT">16,16,16,16</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="m|57n9Fb7,*9.~oD^J3J">
+            <mutation component_type="Decoration" method_name="SetMargin" is_generic="false" instance_name="Decoration1"></mutation>
+            <field name="COMPONENT_SELECTOR">Decoration1</field>
+            <value name="ARG0">
+              <block type="component_component_block" id="3$#gCTXlzgTF;$tzzLXH">
+                <mutation component_type="Label" instance_name="categoryLabel_copy"></mutation>
+                <field name="COMPONENT_SELECTOR">categoryLabel_copy</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="u6XSk2ohZr=L;zs2=,Iu">
+                <field name="TEXT">16,16,16,16</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="Wn4hYJj9!?8uww,4=9E;">
+                <mutation component_type="Decoration" method_name="SetMargin" is_generic="false" instance_name="Decoration1"></mutation>
+                <field name="COMPONENT_SELECTOR">Decoration1</field>
+                <value name="ARG0">
+                  <block type="component_component_block" id="Qnw/f-Qn+VjbW3,l#[i0">
+                    <mutation component_type="Label" instance_name="categoryLabel_copy1"></mutation>
+                    <field name="COMPONENT_SELECTOR">categoryLabel_copy1</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="JcgiZSvJ)4.eT2(|GW6u">
+                    <field name="TEXT">16,16,16,16</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="7:o(86]oV2X`xd(2)=+T" x="-810" y="-90">
+    <field name="NAME">adjustPaddingView</field>
+    <statement name="STACK">
+      <block type="component_method" id="@1hh!F2k0FER2.DCohZ0">
+        <mutation component_type="Decoration" method_name="SetMargin" is_generic="false" instance_name="Decoration1"></mutation>
+        <field name="COMPONENT_SELECTOR">Decoration1</field>
+        <value name="ARG0">
+          <block type="component_component_block" id="0+%~$1ndLq@G(arEk^ku">
+            <mutation component_type="HorizontalArrangement" instance_name="PeopleView"></mutation>
+            <field name="COMPONENT_SELECTOR">PeopleView</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="P4N7IETo2PxLRoM0%l(}">
+            <field name="TEXT">8,8,12,8</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="rBzat5U[G^+56sqR,BL^">
+            <mutation component_type="Decoration" method_name="SetMargin" is_generic="false" instance_name="Decoration1"></mutation>
+            <field name="COMPONENT_SELECTOR">Decoration1</field>
+            <value name="ARG0">
+              <block type="component_component_block" id="|+*XP/v}KShkPF#74e8V">
+                <mutation component_type="HorizontalArrangement" instance_name="PeopleView_copy"></mutation>
+                <field name="COMPONENT_SELECTOR">PeopleView_copy</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="1R?-zSXG!l/UXFNw(XMW">
+                <field name="TEXT">8,8,12,8</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="7z#3Ldss=Wda-NEh{]Y}">
+                <mutation component_type="Decoration" method_name="SetMargin" is_generic="false" instance_name="Decoration1"></mutation>
+                <field name="COMPONENT_SELECTOR">Decoration1</field>
+                <value name="ARG0">
+                  <block type="component_component_block" id="?^uH=O.=ClR#ix#){!Gr">
+                    <mutation component_type="HorizontalArrangement" instance_name="PeopleView_copy1"></mutation>
+                    <field name="COMPONENT_SELECTOR">PeopleView_copy1</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="z12B.$@s)^zX:?MBER]h">
+                    <field name="TEXT">8,8,12,8</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="X6]K;q.]/t?$I[?WYirx" x="-350" y="-90">
+    <field name="NAME">loadImage</field>
+    <statement name="STACK">
+      <block type="component_set_get" id=";vLXdc/HZ=^fO`5CaN;6">
+        <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web1"></mutation>
+        <field name="COMPONENT_SELECTOR">Web1</field>
+        <field name="PROP">Url</field>
+        <value name="VALUE">
+          <block type="text" id="T]|;])HwWi3_uaE`]!W_">
+            <field name="TEXT">https://github.com/vjdyofficial/vjdyofficial/blob/main/app-server/aboutapp/me.jpg?raw=true</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="%ipfl:Z#97^^zFCM4{K[">
+            <mutation component_type="Web" set_or_get="set" property_name="ResponseFileName" is_generic="false" instance_name="Web1"></mutation>
+            <field name="COMPONENT_SELECTOR">Web1</field>
+            <field name="PROP">ResponseFileName</field>
+            <value name="VALUE">
+              <block type="text" id="UAgCom9!!#5;~}FyQ-p?">
+                <field name="TEXT">profiles/1.tmp</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="fc[sXXoDPlJ@LPzJZ7IG">
+                <mutation component_type="Web" method_name="Get" is_generic="false" instance_name="Web1"></mutation>
+                <field name="COMPONENT_SELECTOR">Web1</field>
+                <next>
+                  <block type="component_set_get" id="![~7DK76~OZ=O(h5E2;,">
+                    <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Web1</field>
+                    <field name="PROP">Url</field>
+                    <value name="VALUE">
+                      <block type="text" id="i.QozyYerrQy{o4yB7pj">
+                        <field name="TEXT">https://github.com/vjdyofficial/vjdyofficial/blob/main/app-server/aboutapp/kayiiiiee.jpg?raw=true</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="oPQ0D7(jatG22;%JE9i^">
+                        <mutation component_type="Web" set_or_get="set" property_name="ResponseFileName" is_generic="false" instance_name="Web1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Web1</field>
+                        <field name="PROP">ResponseFileName</field>
+                        <value name="VALUE">
+                          <block type="text" id="`IJC-YHR!=!C$%l^/dt{">
+                            <field name="TEXT">profiles/2.tmp</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="tf+%%iyV,_|,[*DZpZof">
+                            <mutation component_type="Web" method_name="Get" is_generic="false" instance_name="Web1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Web1</field>
+                            <next>
+                              <block type="component_set_get" id="6T*~F$IXVj1M)v5tfg{[">
+                                <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Web1</field>
+                                <field name="PROP">Url</field>
+                                <value name="VALUE">
+                                  <block type="text" id="33.5|ULZt0EZmi[A-)yX">
+                                    <field name="TEXT">https://avatars.githubusercontent.com/u/60199611?v=4</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_set_get" id="_ftdN}WRfck+JA{l!IUu">
+                                    <mutation component_type="Web" set_or_get="set" property_name="ResponseFileName" is_generic="false" instance_name="Web1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Web1</field>
+                                    <field name="PROP">ResponseFileName</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="je{I5AG^JsTsGy.o$lFJ">
+                                        <field name="TEXT">profiles/3.tmp</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_method" id="cm=}-#CCD3wNK3OEuPET">
+                                        <mutation component_type="Web" method_name="Get" is_generic="false" instance_name="Web1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">Web1</field>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="*YvDC[`:pZbpc]p18*?L" x="-1290" y="210">
+    <mutation component_type="Form" is_generic="false" instance_name="AboutActivity" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">AboutActivity</field>
+    <statement name="DO">
+      <block type="component_set_get" id="[29Qy[,|8gEO!3L3d[9~">
+        <mutation component_type="Form" set_or_get="set" property_name="ShowTitlebarBackButton" is_generic="false" instance_name="AboutActivity"></mutation>
+        <field name="COMPONENT_SELECTOR">AboutActivity</field>
+        <field name="PROP">ShowTitlebarBackButton</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="bDuEEaQngZSTGN/i$YG?">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="aVj8)M,$%F6jnpyyQ[`O" collapsed="true">
+            <mutation component_type="Decoration" method_name="SetMargin" is_generic="false" instance_name="Decoration1"></mutation>
+            <field name="COMPONENT_SELECTOR">Decoration1</field>
+            <value name="ARG0">
+              <block type="component_component_block" id="O5n]m5qq@EUK^@6:O]MK">
+                <mutation component_type="VerticalArrangement" instance_name="Vertical_Arrangement1"></mutation>
+                <field name="COMPONENT_SELECTOR">Vertical_Arrangement1</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="|uaFNy%P9m#5*Ph-E/zn">
+                <field name="TEXT">12,12,48,12</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="Tu6Je,`gr!}yZ=^*@qVw" inline="false">
+                <mutation name="adjustPaddingText"></mutation>
+                <field name="PROCNAME">adjustPaddingText</field>
+                <next>
+                  <block type="procedures_callnoreturn" id="?lG|M#=%U;]*#~;3nx(@" inline="false">
+                    <mutation name="adjustPaddingView"></mutation>
+                    <field name="PROCNAME">adjustPaddingView</field>
+                    <next>
+                      <block type="procedures_callnoreturn" id="-BFnmEc!Ol}6^+G|RV!c" inline="false">
+                        <mutation name="loadImage"></mutation>
+                        <field name="PROCNAME">loadImage</field>
+                        <next>
+                          <block type="component_method" id="ZgdXCsIq(/]/Gq@%{JHp" collapsed="true">
+                            <mutation component_type="Decoration" method_name="SetPadding" is_generic="false" instance_name="Decoration1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Decoration1</field>
+                            <value name="ARG0">
+                              <block type="component_component_block" id="1vul3=KK`jezs7-y?L$U">
+                                <mutation component_type="Label" instance_name="styleTextBG"></mutation>
+                                <field name="COMPONENT_SELECTOR">styleTextBG</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="text" id="30y$gb7!*VqHh+O2E2x/">
+                                <field name="TEXT">4,8,4,8</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="component_method" id="U7yYsu-A9}Z6Zd=/ocA`" collapsed="true">
+                                <mutation component_type="Decoration" method_name="SetPadding" is_generic="false" instance_name="Decoration1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Decoration1</field>
+                                <value name="ARG0">
+                                  <block type="component_component_block" id="1_xT_m`|~e%,pes}81k?">
+                                    <mutation component_type="Label" instance_name="styleTextBG_copy"></mutation>
+                                    <field name="COMPONENT_SELECTOR">styleTextBG_copy</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <block type="text" id="oI5R-dp9jcJ8p33NO;sX">
+                                    <field name="TEXT">4,8,4,8</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_set_get" id="CRg{AbP%;Cw.nhU,@N`V">
+                                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="styleTextBG"></mutation>
+                                    <field name="COMPONENT_SELECTOR">styleTextBG</field>
+                                    <field name="PROP">Text</field>
+                                    <value name="VALUE">
+                                      <block type="text_changeCase" id="uv_Ep]nkEVRKqfWa_lF5">
+                                        <field name="OP">UPCASE</field>
+                                        <value name="TEXT">
+                                          <block type="component_set_get" id="/A$#c+w~VM(5Zr]?p_[7">
+                                            <mutation component_type="Package" set_or_get="get" property_name="VersionName" is_generic="false" instance_name="Package_Utilities1"></mutation>
+                                            <field name="COMPONENT_SELECTOR">Package_Utilities1</field>
+                                            <field name="PROP">VersionName</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_set_get" id="*m4Z7:OaM2z33F3(ZFW7">
+                                        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="styleTextBG_copy"></mutation>
+                                        <field name="COMPONENT_SELECTOR">styleTextBG_copy</field>
+                                        <field name="PROP">Text</field>
+                                        <value name="VALUE">
+                                          <block type="text_changeCase" id=",8^t=c5[[9=-aAfsfzB7">
+                                            <field name="OP">UPCASE</field>
+                                            <value name="TEXT">
+                                              <block type="component_set_get" id="y:bv2I_W0{lojs_?Y-|_">
+                                                <mutation component_type="Package" set_or_get="get" property_name="VersionCode" is_generic="false" instance_name="Package_Utilities1"></mutation>
+                                                <field name="COMPONENT_SELECTOR">Package_Utilities1</field>
+                                                <field name="PROP">VersionCode</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="3![DWbGfB_.+zV}_A7x4" x="-350" y="250">
+    <mutation component_type="Web" is_generic="false" instance_name="Web1" event_name="GotFile"></mutation>
+    <field name="COMPONENT_SELECTOR">Web1</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="BZ*[.btHFe:vujS!6cMg">
+        <field name="VAR">global debug</field>
+        <value name="VALUE">
+          <block type="lexical_variable_get" id=":!X63Gu%M:cv#Hu6LZ17">
+            <mutation>
+              <eventparam name="fileName"></eventparam>
+            </mutation>
+            <field name="VAR">fileName</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="$tp?N7hB@:iqw72ebtEv">
+            <value name="IF0">
+              <block type="text_contains" id="ey4/+4kJ1$3H0C6mHj1E">
+                <value name="TEXT">
+                  <block type="lexical_variable_get" id="!zx{h)u4s`[9eVTG+,b(">
+                    <mutation>
+                      <eventparam name="fileName"></eventparam>
+                    </mutation>
+                    <field name="VAR">fileName</field>
+                  </block>
+                </value>
+                <value name="PIECE">
+                  <block type="text" id="-THGVHC_S)gTDl!#Fbhb">
+                    <field name="TEXT">profiles/1.tmp</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="@THes)wlPnMeJiJTom8u">
+                <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="PeopleCardImg"></mutation>
+                <field name="COMPONENT_SELECTOR">PeopleCardImg</field>
+                <field name="PROP">Picture</field>
+                <value name="VALUE">
+                  <block type="lexical_variable_get" id="3|kKFw}M)i,qhXKWm(Va">
+                    <mutation>
+                      <eventparam name="fileName"></eventparam>
+                    </mutation>
+                    <field name="VAR">fileName</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="NF^*U5O8[$+e^L`SOR}c" collapsed="true">
+                    <mutation component_type="Phase" method_name="AnimateComponent" is_generic="false" instance_name="Phase1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Phase1</field>
+                    <value name="ARG0">
+                      <block type="math_number" id="XUjr=/1#iO#-jhH96TB7">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="component_component_block" id="EK#[gFCtcuoEZ7Cb7R@n">
+                        <mutation component_type="Image" instance_name="PeopleCardImg"></mutation>
+                        <field name="COMPONENT_SELECTOR">PeopleCardImg</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block type="component_set_get" id="Eb8l)``Vi6/fP[^?Z|x.">
+                        <mutation component_type="Phase" set_or_get="get" property_name="FadeIn" is_generic="false" instance_name="Phase1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Phase1</field>
+                        <field name="PROP">FadeIn</field>
+                      </block>
+                    </value>
+                    <value name="ARG3">
+                      <block type="math_number" id="o]TP%{L/H7j*EAf_`)d)">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="ARG4">
+                      <block type="math_number" id="]QApt6mX?L7O;CyCJS8;">
+                        <field name="NUM">250</field>
+                      </block>
+                    </value>
+                    <value name="ARG5">
+                      <block type="math_number" id="qjx`^r+iF]Ms{NX*Cgnk">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="1QAT=4JQN$aZRv~Gn)/?">
+                <value name="IF0">
+                  <block type="text_contains" id="x,zOesOwH3~0+AG@y=6o">
+                    <value name="TEXT">
+                      <block type="lexical_variable_get" id="y0c)A5j;_Cr*!3AZ$m0[">
+                        <mutation>
+                          <eventparam name="fileName"></eventparam>
+                        </mutation>
+                        <field name="VAR">fileName</field>
+                      </block>
+                    </value>
+                    <value name="PIECE">
+                      <block type="text" id="%,Z.^8|drf2A=LQPle8s">
+                        <field name="TEXT">profiles/2.tmp</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="component_set_get" id="NJ$4iuU8~/Fb[i@4dFpH">
+                    <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="PeopleCardImg_copy"></mutation>
+                    <field name="COMPONENT_SELECTOR">PeopleCardImg_copy</field>
+                    <field name="PROP">Picture</field>
+                    <value name="VALUE">
+                      <block type="lexical_variable_get" id="Ely5-uOZH2:mMm3^Oe@h">
+                        <mutation>
+                          <eventparam name="fileName"></eventparam>
+                        </mutation>
+                        <field name="VAR">fileName</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="Ff42LhhgJ`@QhG1t9v$i" collapsed="true">
+                        <mutation component_type="Phase" method_name="AnimateComponent" is_generic="false" instance_name="Phase1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Phase1</field>
+                        <value name="ARG0">
+                          <block type="math_number" id="w3WeI1*LXfN)]TqvhCMt">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="component_component_block" id="twR1XgUxKD4Y`:.+9XhD">
+                            <mutation component_type="Image" instance_name="PeopleCardImg_copy"></mutation>
+                            <field name="COMPONENT_SELECTOR">PeopleCardImg_copy</field>
+                          </block>
+                        </value>
+                        <value name="ARG2">
+                          <block type="component_set_get" id="gJ]pZifU(gMkb%M*_RKF">
+                            <mutation component_type="Phase" set_or_get="get" property_name="FadeIn" is_generic="false" instance_name="Phase1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Phase1</field>
+                            <field name="PROP">FadeIn</field>
+                          </block>
+                        </value>
+                        <value name="ARG3">
+                          <block type="math_number" id="_VOB.`F@$BUMvXd+Z:Z/">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ARG4">
+                          <block type="math_number" id="|UEXt22tP*#[_XvEDY^7">
+                            <field name="NUM">250</field>
+                          </block>
+                        </value>
+                        <value name="ARG5">
+                          <block type="math_number" id="//fe^g~qE}-`0Ya/zuJ4">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="|olMphU}^gBg#MNjf.~G">
+                    <value name="IF0">
+                      <block type="text_contains" id="kZV[#weB?Dl^0)YQ/v4s">
+                        <value name="TEXT">
+                          <block type="lexical_variable_get" id="*Gm@c6}o)m-sm=H8132Y">
+                            <mutation>
+                              <eventparam name="fileName"></eventparam>
+                            </mutation>
+                            <field name="VAR">fileName</field>
+                          </block>
+                        </value>
+                        <value name="PIECE">
+                          <block type="text" id="%/P~/d9+oE(~O!vJq^`W">
+                            <field name="TEXT">profiles/3.tmp</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="component_set_get" id="bLMZ#iZ6Khs7~!txu$8a">
+                        <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="PeopleCardImg_copy1"></mutation>
+                        <field name="COMPONENT_SELECTOR">PeopleCardImg_copy1</field>
+                        <field name="PROP">Picture</field>
+                        <value name="VALUE">
+                          <block type="lexical_variable_get" id="M`-PQB}1FW2b3?3,(Unx">
+                            <mutation>
+                              <eventparam name="fileName"></eventparam>
+                            </mutation>
+                            <field name="VAR">fileName</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="kWCycQO-,:}HCbKpijSM" collapsed="true">
+                            <mutation component_type="Phase" method_name="AnimateComponent" is_generic="false" instance_name="Phase1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Phase1</field>
+                            <value name="ARG0">
+                              <block type="math_number" id="t)5#77fxP,MC}h14$e-#">
+                                <field name="NUM">3</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="component_component_block" id="^w}#`L8K-9Jk43#^RL+w">
+                                <mutation component_type="Image" instance_name="PeopleCardImg_copy1"></mutation>
+                                <field name="COMPONENT_SELECTOR">PeopleCardImg_copy1</field>
+                              </block>
+                            </value>
+                            <value name="ARG2">
+                              <block type="component_set_get" id="EaVn4_{`V$Ihp5wa3R8K">
+                                <mutation component_type="Phase" set_or_get="get" property_name="FadeIn" is_generic="false" instance_name="Phase1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Phase1</field>
+                                <field name="PROP">FadeIn</field>
+                              </block>
+                            </value>
+                            <value name="ARG3">
+                              <block type="math_number" id="XZ?=fg}%_6)3{6X#*1AK">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="ARG4">
+                              <block type="math_number" id="Li#,0aB`+|(w=O]DGV:T">
+                                <field name="NUM">250</field>
+                              </block>
+                            </value>
+                            <value name="ARG5">
+                              <block type="math_number" id="Ga%?MZ[izYa=_!O*!:_w">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="242" language-version="34"></yacodeblocks>
+</xml>
